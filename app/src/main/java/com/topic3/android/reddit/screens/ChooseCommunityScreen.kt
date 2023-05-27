@@ -96,6 +96,12 @@ fun SearchedCommunities(
 }
 
 @Composable
+fun Community(text: String, modifier: Modifier, onCommunityClicked: () -> Unit) {
+
+}
+
+
+@Composable
 fun ChooseCommunityTopBar(modifier: Modifier = Modifier) {
 
     val colors = MaterialTheme.colors
