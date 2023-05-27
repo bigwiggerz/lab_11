@@ -60,9 +60,14 @@ fun Post(post: PostModel, content: @Composable () -> Unit = {}) {
 }
 
 @Composable
-fun Header(post: PostModel) {
-    Row(modifier = Modifier.padding(start = 16.dp)) {
-        Image(
+fun Header(
+    post: PostModel,
+    onJoinButtonClick: (Boolean) -> Unit = {}
+) {
+    Row(
+        modifier = Modifier.padding(start = 16.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
             ImageBitmap.imageResource(id = R.drawable.subreddit_placeholder),
             contentDescription = stringResource(id = R.string.subreddits),
             Modifier
