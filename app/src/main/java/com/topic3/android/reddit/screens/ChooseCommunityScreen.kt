@@ -1,30 +1,29 @@
 package com.topic3.android.reddit.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.height
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import com.topic3.android.reddit.routing.BackButtonAction
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
-import androidx.compose.runtime.Composable
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.topic3.android.reddit.R
+import com.topic3.android.reddit.routing.BackButtonAction
+import com.topic3.android.reddit.routing.RedditRouter
+import com.topic3.android.reddit.viewmodel.MainViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
-import androidx.compose.ui.unit.sp
-import com.topic3.android.reddit.R
-import com.topic3.android.reddit.routing.RedditRouter
-import com.topic3.android.reddit.viewmodel.MainViewModel
 
 private const val SEARCH_DELAY_MILLIS = 300L
 
