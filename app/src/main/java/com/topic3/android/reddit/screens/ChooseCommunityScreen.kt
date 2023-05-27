@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.height
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import com.topic3.android.reddit.routing.BackButtonAction
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -71,6 +72,9 @@ fun ChooseCommunityScreen(viewModel: MainViewModel, modifier: Modifier = Modifie
             )
         )
         SearchedCommunities(communities, viewModel, modifier)
+        BackButtonAction {
+            RedditRouter.goBack()
+        }
     }
 }
 
